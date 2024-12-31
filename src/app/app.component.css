@@ -1,0 +1,19 @@
+/* Default row height for larger screens */
+mat-grid-list {
+    row-height: 15vh; /* Adjust row height to 15% of viewport height */
+  }
+  
+  /* For medium screens */
+  @media (max-width: 1024px) {
+    mat-grid-list {
+      row-height: 12vh; /* Adjust row height for medium screens */
+    }
+  }
+  
+  /* For small screens */
+  @media (max-width: 768px) {
+    mat-grid-list {
+      row-height: 10vh; /* Adjust row height for smaller screens */
+    }
+  }
+  
