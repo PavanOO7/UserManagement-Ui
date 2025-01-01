@@ -1,0 +1,8 @@
+.example-container {
+    width: auto;
+    height: 100%;
+   padding: 0%;
+    border: 1px solid #555;
+    background: linear-gradient(90deg, #1B213A 0%, #0F1624 70%);
+  }
+  
