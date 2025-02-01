@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TasksModule } from './tasks/tasks.module';
 import { SprintManagementModule } from './sprint-management/sprint-management.module';
+import { MainModuleModule } from './main-module/main-module.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -16,8 +17,7 @@ import { SprintManagementModule } from './sprint-management/sprint-management.mo
     AppRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
-    TasksModule,
-    SprintManagementModule
+    MainModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
