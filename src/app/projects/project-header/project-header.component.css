@@ -1,0 +1,14 @@
+.app-header{
+    background-color: #1E293B;
+    /* border: 1px solid  rgb(41, 50, 87); */
+}
+.text-color-white{
+    color: rgb(191, 200, 237);
+}
+.button-color {
+    background-color: #9333EA !important; /* Use !important to override framework styles */
+    color: white; /* Ensure text is readable */
+    border: none; /* Remove any unwanted borders */
+    
+  }
+  

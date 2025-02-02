@@ -1,0 +1,112 @@
+<div class="h-100">
+<p-accordion [activeIndex]="0" class="background-none bg-transparent p-0">
+    <p-accordionTab  header="Header I"  class=" background-display-none p-0">
+        <div cdkDropListGroup class="main-container-sprints-list w-100 p-1">
+        <div class="example-container ">
+            <div class="position-sticky top-0 text-headers  text-white d-flex justify-content-center align-items-center">To do</div>
+            <div
+              cdkDropList
+              #todoList="cdkDropList"
+              [cdkDropListData]="todo"
+             
+              class="example-list"
+              (cdkDropListDropped)="drop($event)">
+              @for (item of todo; track item) {
+                <div class="example-box m-1" cdkDrag>
+                    <div class="w-100  card task-card light-background-color text-white">
+                        {{item}}
+                    </div>
+                </div>
+              }
+            </div>
+          </div>
+          <div class="example-container ms-1 ">
+            <div class="position-sticky top-0 text-headers text-white d-flex justify-content-center align-items-center">In Progress</div>
+            <div
+              cdkDropList
+              #inprogresslist="cdkDropList"
+              [cdkDropListData]="inprogress"
+             
+              class="example-list"
+              (cdkDropListDropped)="drop($event)">
+              @for (item of inprogress; track item) {
+                <div class="example-box m-1" cdkDrag>
+                    <div class="w-100  card task-card text-white">
+                        {{item}}
+                    </div>
+                </div>
+              }
+            </div>
+          </div>
+          <div class="example-container ms-1 ">
+            <div class="position-sticky top-0 text-headers text-white d-flex justify-content-center align-items-center ">In Review</div>
+            <div
+              cdkDropList
+              #inprogresslist="cdkDropList"
+              [cdkDropListData]="inReview"
+             
+              class="example-list"
+              (cdkDropListDropped)="drop($event)">
+              @for (item of inReview; track item) {
+                <div class="example-box m-1" cdkDrag>
+                    <div class="w-100  card task-card text-white">
+                    {{item}}
+                </div>
+                </div>
+              }
+            </div>
+          </div>
+          <div class="example-container ms-1 ">
+            <div class="position-sticky top-0 text-headers text-white d-flex justify-content-center align-items-center">Done</div>
+            <div
+              cdkDropList
+              #doneList="cdkDropList"
+              [cdkDropListData]="done"
+           
+              class="example-list"
+              (cdkDropListDropped)="drop($event)">
+              @for (item of done; track item) {
+                <div class="example-box m-1" cdkDrag>
+                    <div class="w-100 card task-card text-white">
+                        {{item}}
+                    </div>
+                </div>
+              }
+            </div>
+          </div>
+
+          <div class="example-container ms-1">
+            <div class="position-sticky top-0 text-headers text-white d-flex justify-content-center align-items-center">On Hold</div>
+          
+            <div
+              cdkDropList
+              #onHoldList="cdkDropList"
+              [cdkDropListData]="onHold"
+             
+              class="example-list"
+              (cdkDropListDropped)="drop($event)">
+              @for (item of onHold; track item) {
+                <div class="example-box m-1" cdkDrag>
+                    <div class="w-100  card task-card text-white">
+                        {{item}}
+                    </div>
+                </div>
+              }
+            </div>
+          </div>
+          
+        </div>
+    </p-accordionTab>
+    <p-accordionTab header="Header II" class="background-display-none">
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...
+        </p>
+    </p-accordionTab>
+    <p-accordionTab header="Header III" class="background-display-none">
+        <p>
+            At vero eos et accusamus et iusto odio dignissimos...
+        </p>
+    </p-accordionTab>
+</p-accordion>
+</div>
+
